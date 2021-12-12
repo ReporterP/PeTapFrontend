@@ -2,13 +2,13 @@ import React from 'react';
 import logo from '../img/dogcat ikon.svg';
 
 
-const Welcome = ()=>{
+const Preloader = ()=>{
     return (
-        <div className='welcome'>
+        <div className='Preloader'>
             <img src={logo} alt={"logo"} />
             <p><span>P</span>E<span>T</span>AP</p>
         </div>
     );
 };
 
-export default Welcome;
+export default Preloader;

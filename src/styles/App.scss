@@ -7,7 +7,7 @@
 }
 
 
-.welcome {
+.Preloader {
     height: 100vh;
     display: flex;
     align-items: center;
@@ -19,8 +19,33 @@
         font-weight: bolder;
     }
     span {
+        animation: petap 1.5s ease-in-out;
         font-size: 57px;
         font-weight: normal;
+
+    }
+    img { 
+        position: relative;
+        animation: updown  1.5s infinite ease-in-out;
     }
 }
 
+@keyframes petap {
+    from {
+        font-size: 40px;
+    }
+    to {
+        font-size: 57px;
+    }
+    
+}
+
+@keyframes updown {
+    from, to {
+        bottom:0;
+    }
+    50% {
+        bottom: 5%;
+        box-shadow: none;
+    }
+}

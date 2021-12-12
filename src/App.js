@@ -1,10 +1,10 @@
 import './styles/App.scss';
-import Welcome from "./components/Welcome"
+import Preloader from "./components/Preloader"
 
 function App() {
   return (
     <div className="App">
-      <Welcome/>
+      <Preloader/>
     </div>
   );
 }
