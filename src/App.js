@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { Routes, Route} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './styles/App.scss';
+import './App.scss';
 import AboutUs from './pages/AboutUs';
 import MainPage from './pages/mainpage';
 import MainMenu from "./components/MainMenu"

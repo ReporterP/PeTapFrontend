@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container ,Row } from 'react-bootstrap';
-import logo from '../img/logo.png';
+import logo from '../img/logo.svg';
 import HeaderButton from './UI/HeaderButton';
 
 const MainMenu = ()=>{

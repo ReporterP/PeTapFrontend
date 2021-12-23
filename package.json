@@ -14,7 +14,10 @@
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.2.1",
     "react-scripts": "^5.0.0",
+    "react-scroll": "^1.8.4",
+    "react-sweet-progress": "^1.1.2",
     "sass": "^1.44.0",
+    "style-it": "^2.1.4",
     "styled-components": "^5.3.3",
     "web-vitals": "^1.1.2"
   },

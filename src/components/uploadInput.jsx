@@ -1,7 +1,14 @@
 import React, { Component } from "react";
 import uploadImageInput from "../img/uploadpage/upload ikon.png"
+import * as Scroll from 'react-scroll';
+import { scroller } from 'react-scroll'
 
-class UploadInput  extends Component {
+
+
+scroller = Scroll.scroller;
+
+
+class UploadInput extends Component {
   constructor(props) {
     super(props);
 
@@ -11,7 +18,13 @@ class UploadInput  extends Component {
   onImageChange = event => {
     if (event.target.files && event.target.files[0]) {
       let img = event.target.files[0];
-      this.props.updateData(URL.createObjectURL(img))
+      scroller.scrollTo('answer', {
+        duration: 10,
+        delay: 10,
+        smooth: true,
+        offset: 10,
+      })
+      this.props.updateData(img, URL.createObjectURL(img))
     } 
   };
 
