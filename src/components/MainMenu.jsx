@@ -12,6 +12,7 @@ const MainMenu = ()=>{
                         <HeaderButton name={<img src={logo} alt={"logo"} />} link="/" />
                         <nav>
                             <HeaderButton name="upload" link="/upload" />
+                            <HeaderButton name="game" link="/game"/>
                             <HeaderButton name="About Us" link="/About" />
                             <HeaderButton name="Statistic" link="/statistic" />
                         </nav>

@@ -10,6 +10,7 @@ import Preloader from "./components/Preloader"
 import Footer from './components/footer';
 import Upload from './pages/UploadPage';
 import Statistic from './pages/statistic';
+import Game from "./pages/game"
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
             <Route path="/about"  element={<AboutUs/>}/>
             <Route path="/upload"  element={<Upload/>}/>
             <Route path="/statistic" element={<Statistic/>}/>
+            <Route path="/game" element={<Game/>}/>
           </Routes>
           <Footer/>
         </div>)}

@@ -29,7 +29,6 @@ const Upload = () => {
     data.append("file", image["back"])
 
     const api = () => {
-
         axios.post("http://localhost:3333/upload", data, {
             headers: {
                 'Content-Type': "multipart/from-data"

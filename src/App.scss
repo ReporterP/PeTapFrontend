@@ -402,6 +402,60 @@ footer {
     transform-origin: center;
 }
 
+.game {
+    padding: 7% 0;
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 46.3366px;
+    }
+}
+
+.dogBtnGame {
+    .GreenBtn{
+        background-color: #DBAD95;
+    }
+}
+
+.centerGameBtn {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    .GreenBtn {
+        padding: 20px 50px;
+    }
+}
+
+.DOG_or_CAT {
+    height: 85vh;
+    div {
+        height: 100%;
+    }
+}
+
+.game_btn_start {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input {
+        width: inherit;
+        height: 100%;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+    }
+}
+
+.startImg{
+    width: 100%;
+    height: auto;
+}
 
 @keyframes orbita {
     from {transform: rotate(0deg) translate(-200px) rotate(0deg);}
