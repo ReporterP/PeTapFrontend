@@ -4,7 +4,6 @@ import UploadInput from "../components/uploadInput";
 import preimg from "../img/uploadpage/upload ikon.svg"
 import GreenBtn from "../components/UI/GreenBtn"
 import { Progress } from 'react-sweet-progress';
-import "react-sweet-progress/lib/style.css";
 import Style from 'style-it';
 import axios from 'axios';
 import * as Scroll from 'react-scroll';

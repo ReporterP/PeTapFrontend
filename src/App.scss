@@ -335,6 +335,48 @@ footer {
     }
 }
 
+.teams {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.team { 
+    position: absolute;
+}
+
+@keyframes orbita {
+    from {transform: rotate(0deg) translate(-200px) rotate(0deg);}
+    to { transform: rotate(360deg) translate(-200px) rotate(-360deg);}
+}
+
+.Sofia {
+    opacity: 0;
+    top: 0;
+    right: 0;
+    transform-origin: center;
+}
+
+.Igor {
+    opacity: 0;
+    top: 0;
+    left: 0;
+    transform-origin: center;
+}
+
+.Sasha {
+    opacity: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: center;
+}
+
+.Alexandra {
+    opacity: 0;
+    bottom: 0;
+    right: 0;
+    transform-origin: center;
+}
 
 @keyframes flip {
     from {

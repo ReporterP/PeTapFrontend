@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { Routes, Route} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "react-sweet-progress/lib/style.css";
 import './App.scss';
 import AboutUs from './pages/AboutUs';
 import MainPage from './pages/mainpage';
@@ -16,7 +17,7 @@ function App() {
 
   useEffect(()=> {
     setLoading(true)
-    setTimeout(()=>{setLoading(false)}, 2000)
+    setTimeout(()=>{setLoading(false)}, 2500)
   }, [])
 
 
