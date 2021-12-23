@@ -2,11 +2,11 @@ import React from "react";
 import { Container, Row, Col } from 'react-bootstrap';
 import FooterLogo from "../img/footer_logo.png"
 
-import twitter from "../img/ikons/twitter.png"
-import facebook from "../img/ikons/facebook.png"
-import discord from "../img/ikons/discord.png"
-import instagram from "../img/ikons/instagram.png"
-import github from "../img/ikons/git.png"
+import twitter from "../img/twitter.png"
+import facebook from "../img/facebook.png"
+import discord from "../img/discord.png"
+import instagram from "../img/instagram.png"
+import github from "../img/git.png"
 
 
 function Footer () {

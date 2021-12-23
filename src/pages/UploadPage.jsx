@@ -1,7 +1,7 @@
 import React , {useState} from "react";
 import { Container, Row, Col } from 'react-bootstrap';
 import UploadInput from "../components/uploadInput";
-import preimg from "../img/uploadpage/upload ikon.svg"
+import preimg from "../img/upload ikon.svg"
 import GreenBtn from "../components/UI/GreenBtn"
 import { Progress } from 'react-sweet-progress';
 import Style from 'style-it';
@@ -18,10 +18,10 @@ const Upload = () => {
 
     const [info, setinfo] = useState()
 
-    const [colorText, setcolorText] = useState([ ".GreenBtn {background-color: #6E9C8D ;}" , "confirm"])
+    const [colorText, setcolorText] = useState([ ".GreenBtn {background-color: #6E9C8D ;}" , "confirm", "?"])
 
     const updateData = (value, show)=>{
-        setcolorText([ ".GreenBtn {background-color: #6E9C8D ;}" , "confirm"])
+        setcolorText([ ".GreenBtn {background-color: #6E9C8D ;}" , "confirm", "?"])
         setimage({"show": show, "back": value})
     }
 
@@ -30,13 +30,13 @@ const Upload = () => {
 
     const api = () => {
 
-        setcolorText([".GreenBtn {background-color: #DBAD95 ;}", "try again"])
-
         axios.post("http://localhost:3333/upload", data, {
             headers: {
                 'Content-Type': "multipart/from-data"
             }
-        }).then(res =>  setinfo(res.data)).catch(err => console.log(err))
+        }).then(res =>  {setinfo(res.data);
+                        setcolorText([".GreenBtn {background-color: #DBAD95 ;}", "try again", res.data.isDog===1?"DOG":"CAT"])  
+        }).catch(err => console.log(err))
     }
 
     // console.log(info !== undefined?info.cats_percent.toString().split(".")[1].slice(0,2)*1:0)
@@ -50,7 +50,7 @@ const Upload = () => {
     return (
         <div className="page">
             <Style>{`.res::after {
-                content:"${info!==undefined?info.isDog===1?"DOG":"CAT":"?"}";
+                content:"${colorText[2]}";
                 ${info!==undefined?"font-size: 150px;":"font-size: 250px;"}}
                 ${colorText[0]}
             `}</Style>

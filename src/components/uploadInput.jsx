@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import uploadImageInput from "../img/uploadpage/upload ikon.png"
+import uploadImageInput from "../img/upload ikon.png"
 import * as Scroll from 'react-scroll';
 import { scroller } from 'react-scroll'
 
@@ -31,7 +31,7 @@ class UploadInput extends Component {
   render() {
     return (
           <div className="uploadImg d-flex">
-            <input type="file" name="myImage" onChange={this.onImageChange} />
+            <input type="file" name="myImage" accept=".jpg,.jpeg" onChange={this.onImageChange} />
             <label htmlFor="myImage">
               <span className="myimageImg"><img src={uploadImageInput} alt="upload"/></span>
               <span className="myimagetext">Upload image</span>

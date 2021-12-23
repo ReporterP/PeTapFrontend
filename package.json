@@ -33,6 +33,7 @@
       "react-app/jest"
     ]
   },
+  "homepage": "./",
   "browserslist": {
     "production": [
       ">0.2%",
@@ -44,5 +45,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+    
   }
 }

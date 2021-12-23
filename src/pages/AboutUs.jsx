@@ -13,10 +13,10 @@ const AboutUs = () => {
     const [team, setteam] = useState("")
 
     useEffect(() => {
-        setTimeout(()=>{setteam(  ".Sofia {animation: orbita 5s linear infinite; opacity: 1;}")}, 0)
-        setTimeout(()=>{setteam( t => t + ".Igor {animation: orbita 5s linear infinite; opacity: 1;} ")}, 1500)
-        setTimeout(()=>{setteam( t => t + ".Sasha {animation: orbita 5s linear infinite; opacity: 1;} ")}, 2500)
-        setTimeout(()=>{setteam( t => t + ".Alexandra {animation: orbita 5s linear infinite; opacity: 1;} ")}, 3500)
+        setTimeout(()=>{setteam(  ".Sofia {animation: orbita 7s linear infinite; opacity: 1;}")}, 0)
+        setTimeout(()=>{setteam( t => t + ".Igor {animation: orbita 7s linear infinite; opacity: 1;} ")}, 2000)
+        setTimeout(()=>{setteam( t => t + ".Sasha {animation: orbita 7s linear infinite; opacity: 1;} ")}, 4000)
+        setTimeout(()=>{setteam( t => t + ".Alexandra {animation: orbita 7s linear infinite; opacity: 1;} ")}, 5500)
     }, [])
 
     console.log(team)
